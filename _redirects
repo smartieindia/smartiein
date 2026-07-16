@@ -1,0 +1,9 @@
+/index.php / 301
+/products / 301
+/product/* /:splat.html 301
+/rolling-shutter /rolling-shutters.html 301
+/high-speed-door /high-speed-doors.html 301
+/boom-barrier /barriers.html 301
+/gate-automation /gates.html 301
+/about-us /about.html 301
+/contact-us /contact.html 301

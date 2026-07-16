@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /sie-admin-x8080.html
+Disallow: /admin/
+Sitemap: https://www.smartie.in/sitemap.xml

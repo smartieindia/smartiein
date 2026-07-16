@@ -1,0 +1,17 @@
+{
+  "currency": "INR",
+  "products": [
+    {"id":"sie-boom-2g","name":"SIE Brushless Boom Barrier — 2nd Gen","category":"Barriers","price":null,"mrp":null,
+     "desc":"140 W brushless DC, 56.8 Nm, 1.5–8 s adjustable, IP44, straight/telescopic/folding boom. 2-year warranty.",
+     "image":"/images/barriers-1.jpg","pay":"","sku":"SIE-BB-2G"},
+    {"id":"sie16-opener","name":"SIE16 Garage Door Opener","category":"Garage & Sectional","price":null,"mrp":null,
+     "desc":"1600 N belt-drive ceiling opener, soft start-stop, auto-reverse, rolling-code remotes. For doors up to 16 m².",
+     "image":"/images/garage-sectional-doors-1.jpg","pay":"","sku":"SIE-16"},
+    {"id":"sie-tubular-motor","name":"SIE Tubular Shutter Motor","category":"Rolling Shutters","price":null,"mrp":null,
+     "desc":"Tubular motor with manual override for motorising rolling shutters. Includes wall switch; remote kit optional.",
+     "image":"/images/rolling-shutters-1.jpg","pay":"","sku":"SIE-TM"},
+    {"id":"sie-remote","name":"SIE Rolling-Code Remote (Pair)","category":"Motors & Spares","price":null,"mrp":null,
+     "desc":"433 MHz rolling-code remotes compatible with SIE gate, shutter and barrier receivers. Sold as a pair.",
+     "image":"/images/automation-motors-1.jpg","pay":"","sku":"SIE-RC2"}
+  ]
+}

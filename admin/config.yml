@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+site_url: "https://www.smartie.in"
+logo_url: "https://www.smartie.in/images/logo.jpg"
+
+collections:
+  - name: "site"
+    label: "🎨 Site Settings"
+    files:
+      - name: "settings"
+        label: "Design, Hero Images, Videos & Client Logos"
+        file: "settings.json"
+        fields:
+          - {label: "Theme colour", name: "theme", widget: "select", options: ["red","amber","blue","emerald","royal","gold"], default: "red", hint: "Signal colour used across the whole site"}
+          - {label: "Announcement bar (leave empty to hide)", name: "announcement", widget: "string", required: false}
+          - label: "Hero images"
+            name: "heroSlots"
+            widget: "list"
+            required: false
+            hint: "Slot names: home-1 … home-6, about, contact, catalogs, shop, or any product page slug like rolling-shutters"
+            fields:
+              - {label: "Slot", name: "slot", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Featured YouTube videos"
+            name: "videos"
+            widget: "list"
+            required: false
+            field: {label: "YouTube link", name: "url", widget: "string"}
+          - label: "Client logos strip"
+            name: "clients"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Logo image (optional)", name: "logo", widget: "image", required: false}
+              - {label: "Company name", name: "name", widget: "string", required: false}
+
+  - name: "shop"
+    label: "🛒 Shop Products"
+    files:
+      - name: "products"
+        label: "Products"
+        file: "products.json"
+        fields:
+          - {label: "Currency", name: "currency", widget: "hidden", default: "INR"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "ID (no spaces, e.g. sie16-opener)", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "SKU", name: "sku", widget: "string", required: false}
+              - {label: "Category", name: "category", widget: "string", required: false}
+              - {label: "Price ₹ (empty = Price on WhatsApp)", name: "price", widget: "number", required: false, value_type: "int"}
+              - {label: "MRP ₹ (optional, shows strike-through)", name: "mrp", widget: "number", required: false, value_type: "int"}
+              - {label: "Product photo", name: "image", widget: "image"}
+              - {label: "Razorpay payment link (optional)", name: "pay", widget: "string", required: false}
+              - {label: "Description", name: "desc", widget: "text"}
