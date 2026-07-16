@@ -2,6 +2,13 @@
   "theme": "red",
   "announcement": "",
   "heroImages": {},
-  "videos": [],
+  "videos": [
+    "https://youtube.com/shorts/IMo7qxBGCJo?si=bQEZUlF8EiesTWh2",
+    "https://youtube.com/shorts/gRkWde994jw?si=TD8c46oPRaSFb59S",
+    "https://youtube.com/shorts/71eIMSk_zrI?si=7KFZF1C5JbkpbYze",
+    "https://youtube.com/shorts/tuWe3RKTc7g?si=DqndIniTn7kzg5dB",
+    "https://youtu.be/Z8_OCGmWgZg?si=9Uhzvu7Nw6yhfbsB",
+    "https://youtube.com/shorts/ZaLA3thf7f0?si=nItENR-PR_afibj4"
+  ],
   "clientLogos": []
 }
