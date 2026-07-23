@@ -275,6 +275,116 @@
    "image": "/images/automatic-doors-1.jpg",
    "pay": "",
    "desc": "1 Pair of Runner with bearing wheels."
+  },
+  {
+   "id": "sie-gate-remote-2ch",
+   "name": "SIE Gate Remote Control (2-Button)",
+   "sku": "SIE-GRC2",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Rolling-code remote transmitter for SIE swing and sliding gate motors, with matching receiver."
+  },
+  {
+   "id": "sie-gate-keyswitch",
+   "name": "SIE Key Switch (Manual Override)",
+   "sku": "SIE-KSW",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Lockable up/down key switch for manual gate or shutter control during power cuts."
+  },
+  {
+   "id": "sie-gate-pushbutton",
+   "name": "SIE 3-Button Control Station (Open/Stop/Close)",
+   "sku": "SIE-PB3",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Wall-mount open/stop/close control panel for gate and shutter motors."
+  },
+  {
+   "id": "sie-photocell-pair",
+   "name": "SIE Safety Photocell (Pair)",
+   "sku": "SIE-PHC2",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Infrared safety-beam sensor pair \u2014 stops the gate/shutter if an obstruction is detected."
+  },
+  {
+   "id": "sie-gate-hinge-bracket",
+   "name": "SIE Swing Gate Hinge Bracket",
+   "sku": "SIE-HNG",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Adjustable articulated hinge bracket for swing gate motor mounting."
+  },
+  {
+   "id": "sie-gate-wheel-bracket",
+   "name": "SIE Sliding Gate Wheel Bracket",
+   "sku": "SIE-WHB",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Heavy-duty guide wheel and bracket assembly for sliding gates."
+  },
+  {
+   "id": "sie-gate-rack",
+   "name": "SIE Nylon Gate Rack (Per Meter)",
+   "sku": "SIE-RCK",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Reinforced nylon rack with mounting bolts for sliding gate motor drive."
+  },
+  {
+   "id": "sie-gate-articulated-arm",
+   "name": "SIE Swing Gate Motor Arm Kit",
+   "sku": "SIE-ARM",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "desc": "Complete articulated-arm actuator kit with wiring and remotes for swing gates."
+  },
+  {
+   "id": "sie-loop-detector",
+   "name": "SIE Vehicle Loop Detector",
+   "sku": "SIE-LOOP",
+   "category": "Barriers",
+   "price": null,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "Induction loop detector for free-exit vehicle sensing at barriers and gates."
+  },
+  {
+   "id": "sie-uhf-reader",
+   "name": "SIE Long-Range UHF Reader",
+   "sku": "SIE-UHF",
+   "category": "Barriers",
+   "price": null,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "Long-range UHF tag reader for hands-free vehicle access at barriers."
   }
  ]
 }
