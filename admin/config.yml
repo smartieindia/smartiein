@@ -886,3 +886,20 @@ collections:
         fields:
           - {label: "Custom CSS", name: "css", widget: "code", default_language: "css", output_code_only: true, required: false, allow_language_selection: false}
           - {label: "Custom JavaScript", name: "js", widget: "code", default_language: "javascript", output_code_only: true, required: false, allow_language_selection: false}
+
+  - name: "blog"
+    label: "📝 Blog & Updates"
+    files:
+      - name: "updates"
+        label: "Daily updates (newest shows first)"
+        file: "content/updates.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            fields:
+              - {label: "Date", name: "date", widget: "string", hint: "e.g. 2026-07-23"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text", required: false}
+              - {label: "Photo", name: "photo", widget: "image", required: false}
+              - {label: "Link (optional)", name: "link", widget: "string", required: false}
