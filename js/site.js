@@ -66,7 +66,7 @@
     const grid=document.getElementById('vidGrid');
     if(!grid||!s||!Array.isArray(s.videos)||!s.videos.length)return;
     grid.innerHTML='';
-    s.videos.slice(0,9).forEach(v=>{
+    s.videos.slice(0,6).forEach(v=>{
       const id=(v.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/)||[])[1]||v;
       const d=document.createElement('div');d.className='vid';
       d.innerHTML='<img src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" alt="SMARTIE installation video" loading="lazy"><div class="play"><span>▶</span></div>';

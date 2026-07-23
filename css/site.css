@@ -310,3 +310,8 @@ header.nav{box-shadow:0 1px 0 rgba(0,0,0,.02),0 10px 40px rgba(10,16,22,.05)}
 .logo-pill{flex:0 0 auto}
 
 body.no-kenburns .hero-slide.on,body.no-kenburns .page-hero .bg{animation:none !important}
+
+/* video hero slides */
+.hero-slide.video{animation:none !important}
+.hero-slide.video iframe{position:absolute;top:50%;left:50%;border:0;pointer-events:none;
+ width:max(100vw,178vh);height:max(100vh,56.4vw);transform:translate(-50%,-50%)}
