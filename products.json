@@ -385,6 +385,17 @@
    "image": "/images/barriers-1.jpg",
    "pay": "",
    "desc": "Long-range UHF tag reader for hands-free vehicle access at barriers."
+  },
+  {
+   "id": "sie-side-motor-kit",
+   "name": "SIE Side Shutter Motor \u2014 Complete Set (with Remote & Bracket)",
+   "sku": "SIE-SDM-KIT",
+   "category": "Rolling Shutters",
+   "price": null,
+   "mrp": null,
+   "image": "https://drive.google.com/thumbnail?id=1A4GXD5msDbBJJk9dqY3br6Rg0GE8uwG_&sz=w1000",
+   "pay": "",
+   "desc": "Complete side motor set for rolling shutters \u2014 motor, mounting bracket and remote control, ready to fit."
   }
  ]
 }
