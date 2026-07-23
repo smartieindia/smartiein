@@ -1,0 +1,4 @@
+{
+ "css": "/* Your custom CSS \u2014 applies to every page. Example:\\n.hero h1{letter-spacing:0}\\n*/",
+ "js": "/* Your custom JavaScript \u2014 runs on every page after load */"
+}

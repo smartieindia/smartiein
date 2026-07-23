@@ -38,6 +38,18 @@ collections:
         fields:
           - {label: "Theme colour", name: "theme", widget: "select", options: ["red","amber","blue","emerald","royal","gold"], default: "red", hint: "Signal colour used across the whole site"}
           - {label: "Announcement bar (leave empty to hide)", name: "announcement", widget: "string", required: false}
+          - label: "🎛️ Cinematic design controls"
+            name: "design"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - {label: "Home hero height (vh, 60-100)", name: "heroHeightVh", widget: "number", default: 88, required: false}
+              - {label: "Inner page hero height (vh, 40-80)", name: "pageHeroHeightVh", widget: "number", default: 62, required: false}
+              - {label: "Hero slideshow — seconds per photo", name: "heroSlideSeconds", widget: "number", default: 7, required: false}
+              - {label: "Review line speed (seconds per loop, lower = faster)", name: "reviewSpeedSeconds", widget: "number", default: 20, required: false}
+              - {label: "Client logos speed (seconds per loop)", name: "logoSpeedSeconds", widget: "number", default: 18, required: false}
+              - {label: "Cinematic zoom on photos (Ken Burns)", name: "kenburns", widget: "boolean", default: true, required: false}
           - label: "Hero images"
             name: "heroSlots"
             widget: "list"
@@ -80,3 +92,797 @@ collections:
               - {label: "Product photo", name: "image", widget: "image"}
               - {label: "Razorpay payment link (optional)", name: "pay", widget: "string", required: false}
               - {label: "Description", name: "desc", widget: "text"}
+
+  - name: "pages"
+    label: "📄 Page Text & Photos"
+    files:
+      - name: "dock-levelers"
+        label: "Dock Levelers"
+        file: "content/dock-levelers.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Dock Levelers & Scissor Lifts", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Hydraulic dock levelers, dock shelters and seals, mobile ram", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Dock Levelers & Scissor Lifts \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Hydraulic Dock Levelers", name: "t008", widget: "string", required: false},
+              {label: "Card title: Dock Shelters & Seals", name: "t009", widget: "string", required: false},
+              {label: "Card title: Scissor Lifts", name: "t010", widget: "string", required: false},
+              {label: "Card title: Mobile Yard Ramps", name: "t011", widget: "string", required: false},
+              {label: "Card text: 6\u201310 T capacity levelers with hinged or telescopic lips brid", name: "t012", widget: "text", required: false},
+              {label: "Card text: Foam and curtain shelters that seal the truck opening for hy", name: "t013", widget: "string", required: false},
+              {label: "Card text: Stationary hydraulic scissor tables for goods movement betwe", name: "t014", widget: "string", required: false},
+              {label: "Card text: Movable ramps to load containers where no dock exists.", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: What capacity leveler do I need?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: Standard duty is 6 T dynamic; for forklift-plus-load traffic", name: "t017", widget: "text", required: false},
+              {label: "Application chip: 3PL & warehousing", name: "t018", widget: "string", required: false},
+              {label: "Application chip: FMCG & e-commerce", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Cold chain", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Manufacturing", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for dock levelers & scissor li", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Dock Levelers & Scissor Lifts \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Dock Levelers & Scissor Lifts \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Dock Levelers & Scissor Lifts \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Dock Levelers & Scissor Lifts \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Dock Levelers & Scissor Lifts \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Dock Levelers & Scissor Lifts \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "pergola-and-roofing"
+        label: "Pergola And Roofing"
+        file: "content/pergola-and-roofing.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Pergolas & Retractable Roofs", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Motorised aluminium louvered pergolas, retractable membrane ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Pergolas & Retractable Roofs \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Louvered Pergolas", name: "t008", widget: "string", required: false},
+              {label: "Card title: Retractable Roofs", name: "t009", widget: "string", required: false},
+              {label: "Card title: Zip Screens", name: "t010", widget: "string", required: false},
+              {label: "Card text: Rotating aluminium louvers with rain sensing, LED lighting a", name: "t011", widget: "string", required: false},
+              {label: "Card text: Sliding membrane/polycarbonate roofs that open terraces to t", name: "t012", widget: "string", required: false},
+              {label: "Card text: Windproof zip-guided fabric screens for sun, rain and insect", name: "t013", widget: "string", required: false},
+              {label: "FAQ question: Can the pergola handle Mumbai monsoon?", name: "t014", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 louvers close to a sealed roof with gutter drainage, a", name: "t015", widget: "text", required: false},
+              {label: "Application chip: Restaurants & rooftops", name: "t016", widget: "string", required: false},
+              {label: "Application chip: Villas & terraces", name: "t017", widget: "string", required: false},
+              {label: "Application chip: Clubs & resorts", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Banquets", name: "t019", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t020", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t021", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t022", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t023", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t024", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t025", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for pergolas & retractable roo", name: "t026", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t027", widget: "text", required: false},
+              {label: "Photo caption: Pergolas & Retractable Roofs \u00b7 01", name: "t028", widget: "string", required: false},
+              {label: "Photo caption: Pergolas & Retractable Roofs \u00b7 02", name: "t029", widget: "string", required: false},
+              {label: "Photo caption: Pergolas & Retractable Roofs \u00b7 03", name: "t030", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Pergolas & Retractable Roofs \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Pergolas & Retractable Roofs \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Pergolas & Retractable Roofs \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "barriers"
+        label: "Barriers"
+        file: "content/barriers.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Boom Barriers & Road Blockers", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Second-generation brushless DC boom barriers with 1.5\u20138 s sp", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Boom Barriers & Road Blockers \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Brushless Boom Barriers (2026)", name: "t008", widget: "string", required: false},
+              {label: "Card title: UHF & Loop Access", name: "t009", widget: "string", required: false},
+              {label: "Card title: Road Blockers & Bollards", name: "t010", widget: "string", required: false},
+              {label: "Card title: Parking Management", name: "t011", widget: "string", required: false},
+              {label: "Card text: 140 W brushless drive, 56.8 Nm, 1.5\u20138 s adjustable speed, IP", name: "t012", widget: "text", required: false},
+              {label: "Card text: SIE88S/SIE88L long-range UHF readers and PD-132 loop detecto", name: "t013", widget: "text", required: false},
+              {label: "Card text: Hydraulic rising blockers and bollards for high-security per", name: "t014", widget: "string", required: false},
+              {label: "Card text: Ticketing, ANPR camera integration, counters and pay station", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: How many cycles per day can the barrier handle?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: The brushless drive is rated for heavy-duty continuous opera", name: "t017", widget: "text", required: false},
+              {label: "Application chip: Societies & townships", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Toll & parking", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Corporate campuses", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Defence & high security", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for boom barriers & road block", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Boom Barriers & Road Blockers \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Boom Barriers & Road Blockers \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Boom Barriers & Road Blockers \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Boom Barriers & Road Blockers \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Boom Barriers & Road Blockers \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Boom Barriers & Road Blockers \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "about"
+        label: "About page"
+        file: "content/about.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Four decades at India's entrances", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: From a 1980 MK-family workshop to a 14-line entrance automat", name: "t002", widget: "text", required: false},
+              {label: "Section heading: Installed in Mumbai. Supported everywhere.", name: "t003", widget: "string", required: false},
+              {label: "Section intro: Dealer & service presence across Mumbai, Ahmedabad, Bangalor", name: "t004", widget: "text", required: false},
+              {label: "Application chip: Mumbai", name: "t005", widget: "string", required: false},
+              {label: "Application chip: Ahmedabad", name: "t006", widget: "string", required: false},
+              {label: "Application chip: Bangalore", name: "t007", widget: "string", required: false},
+              {label: "Application chip: Lucknow", name: "t008", widget: "string", required: false},
+              {label: "Application chip: Delhi", name: "t009", widget: "string", required: false},
+              {label: "Application chip: Jaipur", name: "t010", widget: "string", required: false},
+              {label: "Application chip: Pune", name: "t011", widget: "string", required: false},
+              {label: "Application chip: Hyderabad", name: "t012", widget: "string", required: false},
+              {label: "Application chip: Chennai", name: "t013", widget: "string", required: false},
+              {label: "Application chip: Kolkata", name: "t014", widget: "string", required: false},
+              {label: "Application chip: Chandigarh", name: "t015", widget: "string", required: false},
+              {label: "Application chip: Surat", name: "t016", widget: "string", required: false},
+              {label: "CTA heading: Get a same-day recommendation for your project", name: "t017", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t018", widget: "text", required: false},
+              {label: "Photo caption: SMARTIE Works \u00b7 Goregaon West", name: "t019", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: SMARTIE Works \u00b7 Goregaon West", name: "img01", widget: "image", required: false}          ]}
+      - name: "contact"
+        label: "Contact page"
+        file: "content/contact.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Tell us about your opening", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Size, photo, location \u2014 that's all we need to start. Same-wo", name: "t002", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "none", name: "none", widget: "hidden", required: false}          ]}
+      - name: "shop"
+        label: "Shop page"
+        file: "content/shop.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Buy direct. Factory-backed.", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Genuine SIE products with warranty, installed or dispatched ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: SMARTIE direct store", name: "t003", widget: "string", required: false},
+              {label: "Section intro: Every order is confirmed by our team before payment \u2014 so you", name: "t004", widget: "text", required: false},
+              {label: "Card title: WhatsApp sizing check", name: "t005", widget: "string", required: false},
+              {label: "Card title: Secure Razorpay link", name: "t006", widget: "string", required: false},
+              {label: "Card title: Dispatch or installation", name: "t007", widget: "string", required: false},
+              {label: "Card text: Send your opening size/photo \u2014 we confirm the exact model so", name: "t008", widget: "string", required: false},
+              {label: "Card text: UPI, cards, netbanking \u2014 payment goes only through verified ", name: "t009", widget: "text", required: false},
+              {label: "Card text: Spares ship pan-India; systems are installed by SMARTIE team", name: "t010", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "none", name: "none", widget: "hidden", required: false}          ]}
+      - name: "index"
+        label: "Home page"
+        file: "content/index.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero subtitle: Smart India Enterprises engineers, installs and services ent", name: "t001", widget: "text", required: false},
+              {label: "Hero badge: Since 1980 \u00b7 MK Family \u00b7 Mumbai", name: "t002", widget: "string", required: false},
+              {label: "Section heading: Every entrance. One engineering partner.", name: "t003", widget: "string", required: false},
+              {label: "Section heading: Built for how your facility actually works", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Real installations, on camera", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Installations, on video", name: "t006", widget: "string", required: false},
+              {label: "Section heading: What clients say on Google", name: "t007", widget: "string", required: false},
+              {label: "Section heading: Before you ask", name: "t008", widget: "string", required: false},
+              {label: "Section intro: Fourteen complete product lines \u2014 designed, installed and se", name: "t009", widget: "text", required: false},
+              {label: "Section intro: We spec by traffic, hygiene class and security level \u2014 not b", name: "t010", widget: "string", required: false},
+              {label: "Section intro: Watch live projects on our channels \u2014 gates, shutters and ba", name: "t011", widget: "text", required: false},
+              {label: "Section intro: Live projects from our YouTube channel \u2014 set your featured v", name: "t012", widget: "text", required: false},
+              {label: "Section intro: Real, verifiable reviews from our Google Business Profile \u2014 ", name: "t013", widget: "text", required: false},
+              {label: "FAQ question: Do you install outside Mumbai?", name: "t014", widget: "string", required: false},
+              {label: "FAQ question: Do you offer AMC and after-sales service?", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: Are your products Made in India?", name: "t016", widget: "string", required: false},
+              {label: "FAQ question: How do I get a quotation?", name: "t017", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 we execute pan-India through our dealer network across", name: "t018", widget: "text", required: false},
+              {label: "FAQ answer: Yes \u2014 annual maintenance contracts, genuine spares ex-stock ", name: "t019", widget: "text", required: false},
+              {label: "FAQ answer: SMARTIE is part of the MK family, in entrance automation sin", name: "t020", widget: "text", required: false},
+              {label: "FAQ answer: Share your opening size and a photo on WhatsApp (+91 80808 0", name: "t021", widget: "text", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card title: Automatic Gates", name: "t025", widget: "string", required: false},
+              {label: "Card title: Automatic Doors", name: "t026", widget: "string", required: false},
+              {label: "Card title: Folding Doors", name: "t027", widget: "string", required: false},
+              {label: "Card title: Boom Barriers & Road Blockers", name: "t028", widget: "string", required: false},
+              {label: "Card title: Dock Levelers & Scissor Lifts", name: "t029", widget: "string", required: false},
+              {label: "Card title: Pergolas & Retractable Roofs", name: "t030", widget: "string", required: false},
+              {label: "Card title: Cold Storage Doors", name: "t031", widget: "string", required: false},
+              {label: "Card title: Industrial Sliding Doors", name: "t032", widget: "string", required: false},
+              {label: "Card title: Fire-Rated & Clean-Room Doors", name: "t033", widget: "string", required: false},
+              {label: "Card title: Turnstiles & Access Control", name: "t034", widget: "string", required: false},
+              {label: "Card title: Motors, Operators & Spares", name: "t035", widget: "string", required: false},
+              {label: "Card title: /entranceautomation", name: "t036", widget: "string", required: false},
+              {label: "Card title: @smartie.in", name: "t037", widget: "string", required: false},
+              {label: "Card title: TrustSEAL Verified", name: "t038", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t039", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t040", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t041", widget: "text", required: false},
+              {label: "Card text: Swing & sliding gate automation \u2014 21 swing motor models, tel", name: "t042", widget: "text", required: false},
+              {label: "Card text: Sensor sliding doors, telescopic and hermetic doors for reta", name: "t043", widget: "string", required: false},
+              {label: "Card text: India's only 100% Indian-make transparent polycarbonate fold", name: "t044", widget: "string", required: false},
+              {label: "Card text: 2nd-gen brushless boom barriers (1.5\u20138 s, IP44), road blocke", name: "t045", widget: "text", required: false},
+              {label: "Card text: Hydraulic dock levelers, dock shelters, scissor lifts and co", name: "t046", widget: "string", required: false},
+              {label: "Card text: Motorised louvered pergolas, retractable fabric roofs and zi", name: "t047", widget: "string", required: false},
+              {label: "Card text: Insulated hinged & sliding cold room doors, freezer doors wi", name: "t048", widget: "string", required: false},
+              {label: "Card text: Straight & telescopic industrial sliding doors, fire-station", name: "t049", widget: "string", required: false},
+              {label: "Card text: SS-304 fire-rated doors, clean-room flush doors and metal fi", name: "t050", widget: "string", required: false},
+              {label: "Card text: Tripod, flap and full-height turnstiles \u2014 SIE-M1000/M2000/A2", name: "t051", widget: "string", required: false},
+              {label: "Card text: SIE motor range, control boards, remotes, photocells and gen", name: "t052", widget: "string", required: false},
+              {label: "Card text: Installation walk-throughs, product demos and service tips.", name: "t053", widget: "string", required: false},
+              {label: "Card text: Latest site photos and project reels from across India.", name: "t054", widget: "string", required: false},
+              {label: "Card text: Verified supplier profile with buyer reviews and product lis", name: "t055", widget: "string", required: false},
+              {label: "CTA heading: Get a same-day recommendation for your project", name: "t056", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t057", widget: "text", required: false},
+              {label: "Quote: Part of the MK family \u2014 India's oldest name in entrance auto", name: "t058", widget: "text", required: false},
+              {label: "Photo caption: Rolling Shutters", name: "t059", widget: "string", required: false},
+              {label: "Photo caption: High-Speed Doors", name: "t060", widget: "string", required: false},
+              {label: "Photo caption: Garage & Sectional Doors", name: "t061", widget: "string", required: false},
+              {label: "Photo caption: Automatic Gates", name: "t062", widget: "string", required: false},
+              {label: "Photo caption: Automatic Doors", name: "t063", widget: "string", required: false},
+              {label: "Photo caption: Folding Doors", name: "t064", widget: "string", required: false},
+              {label: "Photo caption: Boom Barriers & Road Blockers", name: "t065", widget: "string", required: false},
+              {label: "Photo caption: Dock Levelers & Scissor Lifts", name: "t066", widget: "string", required: false},
+              {label: "Photo caption: Pergolas & Retractable Roofs", name: "t067", widget: "string", required: false},
+              {label: "Photo caption: Cold Storage Doors", name: "t068", widget: "string", required: false},
+              {label: "Photo caption: Industrial Sliding Doors", name: "t069", widget: "string", required: false},
+              {label: "Photo caption: Fire-Rated & Clean-Room Doors", name: "t070", widget: "string", required: false},
+              {label: "Photo caption: Turnstiles & Access Control", name: "t071", widget: "string", required: false},
+              {label: "Photo caption: Motors, Operators & Spares", name: "t072", widget: "string", required: false},
+              {label: "Photo caption: SMARTIE \u00b7 Mumbai Works", name: "t073", widget: "string", required: false},
+              {label: "Industry title: Warehousing & 3PL", name: "t074", widget: "string", required: false},
+              {label: "Industry title: Pharma & Cleanrooms", name: "t075", widget: "string", required: false},
+              {label: "Industry title: Cold Chain", name: "t076", widget: "string", required: false},
+              {label: "Industry title: Residential & Societies", name: "t077", widget: "string", required: false},
+              {label: "Industry title: Retail & Hospitality", name: "t078", widget: "string", required: false},
+              {label: "Industry title: Infrastructure & Security", name: "t079", widget: "string", required: false},
+              {label: "Industry text: High-speed doors, dock levelers, shelters and sectional door", name: "t080", widget: "text", required: false},
+              {label: "Industry text: Hermetic doors, clean-room flush doors, SS-304 fire doors an", name: "t081", widget: "string", required: false},
+              {label: "Industry text: Freezer high-speed doors, insulated cold-room doors and stri", name: "t082", widget: "string", required: false},
+              {label: "Industry text: Gate automation, garage doors, boom barriers and video-integ", name: "t083", widget: "string", required: false},
+              {label: "Industry text: Sensor sliding doors, transparent shutters, folding fa\u00e7ades ", name: "t084", widget: "string", required: false},
+              {label: "Industry text: Road blockers, bollards, full-height turnstiles and toll-gra", name: "t085", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Rolling Shutters", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: High-Speed Doors", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Garage & Sectional Doors", name: "img03", widget: "image", required: false},
+              {label: "Photo 4: Automatic Gates", name: "img04", widget: "image", required: false},
+              {label: "Photo 5: Automatic Doors", name: "img05", widget: "image", required: false},
+              {label: "Photo 6: Folding Doors", name: "img06", widget: "image", required: false},
+              {label: "Photo 7: Boom Barriers & Road Blockers", name: "img07", widget: "image", required: false},
+              {label: "Photo 8: Dock Levelers & Scissor Lifts", name: "img08", widget: "image", required: false},
+              {label: "Photo 9: Pergolas & Retractable Roofs", name: "img09", widget: "image", required: false},
+              {label: "Photo 10: Cold Storage Doors", name: "img10", widget: "image", required: false},
+              {label: "Photo 11: Industrial Sliding Doors", name: "img11", widget: "image", required: false},
+              {label: "Photo 12: Fire-Rated & Clean-Room Doors", name: "img12", widget: "image", required: false},
+              {label: "Photo 13: Turnstiles & Access Control", name: "img13", widget: "image", required: false},
+              {label: "Photo 14: Motors, Operators & Spares", name: "img14", widget: "image", required: false},
+              {label: "Photo 15: SMARTIE \u00b7 Mumbai Works", name: "img15", widget: "image", required: false}          ]}
+      - name: "fire-rated-doors"
+        label: "Fire Rated Doors"
+        file: "content/fire-rated-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Fire-Rated & Clean-Room Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: SS-304 and GI fire-rated doors and clean-room flush doors \u2014 ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Fire-Rated & Clean-Room Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: SS-304 Fire-Rated Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Metal Fire Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Clean-Room Doors", name: "t010", widget: "string", required: false},
+              {label: "Card text: Stainless fire doors for corrosive and hygienic environments", name: "t011", widget: "string", required: false},
+              {label: "Card text: GI fire-rated doorsets in 60/120-minute constructions with c", name: "t012", widget: "string", required: false},
+              {label: "Card text: Flush, crevice-free doors with hermetic options for pharma a", name: "t013", widget: "string", required: false},
+              {label: "FAQ question: Do you supply doors with panic bars and closers?", name: "t014", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 complete certified ironmongery including panic exit de", name: "t015", widget: "text", required: false},
+              {label: "Application chip: Pharma & biotech", name: "t016", widget: "string", required: false},
+              {label: "Application chip: Hospitals", name: "t017", widget: "string", required: false},
+              {label: "Application chip: Commercial towers", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Industry", name: "t019", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t020", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t021", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t022", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t023", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t024", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t025", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for fire-rated & clean-room do", name: "t026", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t027", widget: "text", required: false},
+              {label: "Photo caption: Fire-Rated & Clean-Room Doors \u00b7 01", name: "t028", widget: "string", required: false},
+              {label: "Photo caption: Fire-Rated & Clean-Room Doors \u00b7 02", name: "t029", widget: "string", required: false},
+              {label: "Photo caption: Fire-Rated & Clean-Room Doors \u00b7 03", name: "t030", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Fire-Rated & Clean-Room Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Fire-Rated & Clean-Room Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Fire-Rated & Clean-Room Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "automatic-doors"
+        label: "Automatic Doors"
+        file: "content/automatic-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Automatic Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Microprocessor-controlled automatic sliding doors \u2014 single, ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Automatic Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Sliding Sensor Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Telescopic Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Hermetic Hospital Doors", name: "t010", widget: "string", required: false},
+              {label: "Card title: Swing Door Operators", name: "t011", widget: "string", required: false},
+              {label: "Card text: Bi-parting and single-slide operators with adjustable speed,", name: "t012", widget: "text", required: false},
+              {label: "Card text: Multi-leaf telescopic tracks that deliver maximum clear open", name: "t013", widget: "string", required: false},
+              {label: "Card text: Sealed sliding doors for OTs and ICUs with hygienic flush le", name: "t014", widget: "text", required: false},
+              {label: "Card text: Low-energy swing operators to automate existing doors for ac", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: Can you automate my existing glass door?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: In most cases yes \u2014 we retrofit operators onto existing fram", name: "t017", widget: "text", required: false},
+              {label: "Application chip: Retail & malls", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Hospitals & labs", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Hotels & offices", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Airports & metro", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for automatic doors", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Automatic Doors \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Automatic Doors \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Automatic Doors \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Automatic Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Automatic Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Automatic Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "rolling-shutters"
+        label: "Rolling Shutters"
+        file: "content/rolling-shutters.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Rolling Shutters", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Motorised and manual rolling shutters engineered in Mumbai \u2014", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Shutter clients on Google", name: "t006", widget: "string", required: false},
+              {label: "Section heading: Rolling Shutters \u2014 common questions", name: "t007", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t008", widget: "string", required: false},
+              {label: "Card title: GI Rolling Shutters", name: "t009", widget: "string", required: false},
+              {label: "Card title: Aluminium Rolling Shutters", name: "t010", widget: "string", required: false},
+              {label: "Card title: Transparent PC Shutters", name: "t011", widget: "string", required: false},
+              {label: "Card title: Perforated & Grille Shutters", name: "t012", widget: "string", required: false},
+              {label: "Card title: Motorisation & Safety", name: "t013", widget: "string", required: false},
+              {label: "Card text: 18/20/22-gauge galvanised steel slats with pressed guides an", name: "t014", widget: "text", required: false},
+              {label: "Card text: Corrosion-free extruded aluminium slats, single or double wa", name: "t015", widget: "text", required: false},
+              {label: "Card text: Full-length transparent polycarbonate shutter \u2014 100% Indian-", name: "t016", widget: "text", required: false},
+              {label: "Card text: Ventilated punched-slat and rod-grille curtains that combine", name: "t017", widget: "text", required: false},
+              {label: "Card text: Tubular and side motors with manual override, remote/RFID/mo", name: "t018", widget: "text", required: false},
+              {label: "FAQ question: Can my existing manual shutter be automated?", name: "t019", widget: "string", required: false},
+              {label: "FAQ question: What slat gauges do you offer?", name: "t020", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 most manual shutters in good mechanical condition can ", name: "t021", widget: "text", required: false},
+              {label: "FAQ answer: GI shutters are supplied in 18, 20 and 22 gauge; aluminium i", name: "t022", widget: "text", required: false},
+              {label: "Application chip: Shopfronts & showrooms", name: "t023", widget: "string", required: false},
+              {label: "Application chip: Warehouses & factories", name: "t024", widget: "string", required: false},
+              {label: "Application chip: Malls & parking", name: "t025", widget: "string", required: false},
+              {label: "Application chip: Pharma & food units", name: "t026", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t027", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t028", widget: "string", required: false},
+              {label: "Card title: Automatic Gates", name: "t029", widget: "string", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t030", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t031", widget: "text", required: false},
+              {label: "Card text: Swing & sliding gate automation \u2014 21 swing motor models, tel", name: "t032", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for rolling shutters", name: "t033", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t034", widget: "text", required: false},
+              {label: "Photo caption: Rolling Shutters \u00b7 01", name: "t035", widget: "string", required: false},
+              {label: "Photo caption: Rolling Shutters \u00b7 02", name: "t036", widget: "string", required: false},
+              {label: "Photo caption: Rolling Shutters \u00b7 03", name: "t037", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Rolling Shutters \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Rolling Shutters \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Rolling Shutters \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "garage-sectional-doors"
+        label: "Garage Sectional Doors"
+        file: "content/garage-sectional-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Garage & Sectional Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Insulated sandwich-panel sectional doors and residential gar", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Garage & Sectional Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Residential Garage Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Industrial Sectional Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Stacking Doors", name: "t010", widget: "string", required: false},
+              {label: "Card title: SIE16 / SIE36 Openers", name: "t011", widget: "string", required: false},
+              {label: "Card text: 40 mm PU-insulated steel panels in woodgrain and RAL finishe", name: "t012", widget: "text", required: false},
+              {label: "Card text: Large-format sectional doors with vision panels, wicket door", name: "t013", widget: "text", required: false},
+              {label: "Card text: Panel-stacking doors for openings where headroom or side roo", name: "t014", widget: "string", required: false},
+              {label: "Card text: Ceiling-mount openers with soft start-stop, auto-reverse obs", name: "t015", widget: "text", required: false},
+              {label: "FAQ question: Are sectional doors safe for homes?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 spring-break safety, finger-safe panel joints and auto", name: "t017", widget: "text", required: false},
+              {label: "Application chip: Bungalows & villas", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Housing societies", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Fire stations", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Industrial docks", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Automatic Gates", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Swing & sliding gate automation \u2014 21 swing motor models, tel", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for garage & sectional doors", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Garage & Sectional Doors \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Garage & Sectional Doors \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Garage & Sectional Doors \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Garage & Sectional Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Garage & Sectional Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Garage & Sectional Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "high-speed-doors"
+        label: "High Speed Doors"
+        file: "content/high-speed-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: High-Speed Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: High-speed PVC roll-up doors with SIE40\u2013SIE100 servo/gear mo", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: High-Speed Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Rapid Roll PVC Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Self-Repairing Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Freezer High-Speed Doors", name: "t010", widget: "string", required: false},
+              {label: "Card title: SIE Motor Range (SIE40\u2013SIE100)", name: "t011", widget: "string", required: false},
+              {label: "Card text: Fast-cycle PVC curtain doors that cut energy loss, dust and ", name: "t012", widget: "string", required: false},
+              {label: "Card text: Zipper-edge curtains that re-insert automatically after acci", name: "t013", widget: "text", required: false},
+              {label: "Card text: Insulated, heated-frame rapid doors for cold rooms and freez", name: "t014", widget: "string", required: false},
+              {label: "Card text: In-house motor and controller range with encoder limits, fre", name: "t015", widget: "text", required: false},
+              {label: "FAQ question: How fast do the doors operate?", name: "t016", widget: "string", required: false},
+              {label: "FAQ question: What happens in a power cut?", name: "t017", widget: "string", required: false},
+              {label: "FAQ answer: Opening speeds of 0.8\u20132.0 m/s depending on size and drive, w", name: "t018", widget: "text", required: false},
+              {label: "FAQ answer: All doors include manual operation; UPS backup and battery k", name: "t019", widget: "text", required: false},
+              {label: "Application chip: Cold storage & freezer rooms", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Pharma cleanrooms", name: "t021", widget: "string", required: false},
+              {label: "Application chip: Food processing", name: "t022", widget: "string", required: false},
+              {label: "Application chip: Warehouse docks", name: "t023", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t024", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t025", widget: "string", required: false},
+              {label: "Card title: Automatic Gates", name: "t026", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t027", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t028", widget: "text", required: false},
+              {label: "Card text: Swing & sliding gate automation \u2014 21 swing motor models, tel", name: "t029", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for high-speed doors", name: "t030", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t031", widget: "text", required: false},
+              {label: "Photo caption: High-Speed Doors \u00b7 01", name: "t032", widget: "string", required: false},
+              {label: "Photo caption: High-Speed Doors \u00b7 02", name: "t033", widget: "string", required: false},
+              {label: "Photo caption: High-Speed Doors \u00b7 03", name: "t034", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: High-Speed Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: High-Speed Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: High-Speed Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "turnstiles-access-control"
+        label: "Turnstiles Access Control"
+        file: "content/turnstiles-access-control.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Turnstiles & Access Control", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Pedestrian entrance control \u2014 tripod, flap and full-height t", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Turnstiles & Access Control \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Tripod Turnstiles", name: "t008", widget: "string", required: false},
+              {label: "Card title: Flap Barriers", name: "t009", widget: "string", required: false},
+              {label: "Card title: Full-Height Turnstiles", name: "t010", widget: "string", required: false},
+              {label: "Card title: Access Integration", name: "t011", widget: "string", required: false},
+              {label: "Card text: SIE-M1000/M2000 manual-assist and A2000 fully-automatic trip", name: "t012", widget: "string", required: false},
+              {label: "Card text: SIE-FB800 fast flap gates for premium office lobbies and met", name: "t013", widget: "string", required: false},
+              {label: "Card text: SIE-FH5000 rotor turnstiles for unmanned perimeters and stad", name: "t014", widget: "string", required: false},
+              {label: "Card text: RFID, biometric and face-recognition readers with attendance", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: Can turnstiles integrate with our attendance system?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 Wiegand/RS-485/TCP-IP outputs integrate with most atte", name: "t017", widget: "text", required: false},
+              {label: "Application chip: Corporate offices", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Factories", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Stadiums & events", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Metro & transit", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for turnstiles & access contro", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Turnstiles & Access Control \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Turnstiles & Access Control \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Turnstiles & Access Control \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Turnstiles & Access Control \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Turnstiles & Access Control \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Turnstiles & Access Control \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "automation-motors"
+        label: "Automation Motors"
+        file: "content/automation-motors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Motors, Operators & Spares", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: The complete SIE drive ecosystem \u2014 swing, sliding, shutter, ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Motors, Operators & Spares \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Gate Motors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Shutter & Door Motors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Access Accessories", name: "t010", widget: "string", required: false},
+              {label: "Card title: Genuine Spares", name: "t011", widget: "string", required: false},
+              {label: "Card text: Swing (21 models) and sliding operators with control boards ", name: "t012", widget: "string", required: false},
+              {label: "Card text: Tubular, side and central shutter motors; SIE16/36 sectional", name: "t013", widget: "text", required: false},
+              {label: "Card text: Remotes, keypads, photocells, flashers, GSM/Wi-Fi modules, U", name: "t014", widget: "string", required: false},
+              {label: "Card text: Boards, arms, racks, springs, curtains and gaskets ex-stock ", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: Do you supply to dealers and fabricators?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 we support a pan-India dealer network across 11+ citie", name: "t017", widget: "text", required: false},
+              {label: "Application chip: Dealers & installers", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Facility teams", name: "t019", widget: "string", required: false},
+              {label: "Application chip: OEM fabricators", name: "t020", widget: "string", required: false},
+              {label: "Application chip: AMC clients", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for motors, operators & spares", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Motors, Operators & Spares \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Motors, Operators & Spares \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Motors, Operators & Spares \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Motors, Operators & Spares \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Motors, Operators & Spares \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Motors, Operators & Spares \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "cold-storage-doors"
+        label: "Cold Storage Doors"
+        file: "content/cold-storage-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Cold Storage Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: PUF-insulated hinged and sliding doors for chillers and free", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Cold Storage Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Sliding Cold Room Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Hinged Cold Room Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Freezer Doors", name: "t010", widget: "string", required: false},
+              {label: "Card title: Strip Curtains & Swing Doors", name: "t011", widget: "string", required: false},
+              {label: "Card text: Rail-guided insulated sliders with cam-lift sealing for chil", name: "t012", widget: "string", required: false},
+              {label: "Card text: Gasketed hinged doors with inside-release safety handles.", name: "t013", widget: "string", required: false},
+              {label: "Card text: Heater-cable frames prevent icing at \u221218 \u00b0C to \u221225 \u00b0C rooms.", name: "t014", widget: "string", required: false},
+              {label: "Card text: PVC strip curtains and flexible swing doors for high-traffic", name: "t015", widget: "string", required: false},
+              {label: "FAQ question: What insulation thickness do you supply?", name: "t016", widget: "string", required: false},
+              {label: "FAQ answer: 80\u2013150 mm PUF panels depending on room temperature class.", name: "t017", widget: "string", required: false},
+              {label: "Application chip: Cold storage & ripening", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Pharma warehouses", name: "t019", widget: "string", required: false},
+              {label: "Application chip: Seafood & meat processing", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Dairy", name: "t021", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t022", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t023", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t024", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t025", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t026", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t027", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for cold storage doors", name: "t028", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t029", widget: "text", required: false},
+              {label: "Photo caption: Cold Storage Doors \u00b7 01", name: "t030", widget: "string", required: false},
+              {label: "Photo caption: Cold Storage Doors \u00b7 02", name: "t031", widget: "string", required: false},
+              {label: "Photo caption: Cold Storage Doors \u00b7 03", name: "t032", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Cold Storage Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Cold Storage Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Cold Storage Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "gates"
+        label: "Gates"
+        file: "content/gates.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Automatic Gates", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Swing and sliding gate automation for villas, societies and ", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Automatic Gates \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Swing Gate Motors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Sliding Gate Motors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Cantilever & Telescopic Gates", name: "t010", widget: "string", required: false},
+              {label: "Card title: Safety & Access", name: "t011", widget: "string", required: false},
+              {label: "Card text: 21 models of articulated-arm and linear ram operators for le", name: "t012", widget: "text", required: false},
+              {label: "Card text: Rack-and-pinion operators for gates from 400 kg to multi-ton", name: "t013", widget: "text", required: false},
+              {label: "Card text: Trackless cantilever and space-saving telescopic gates fabri", name: "t014", widget: "string", required: false},
+              {label: "Card text: Photocells, flashing lamps, loop detectors, GSM/Wi-Fi module", name: "t015", widget: "text", required: false},
+              {label: "FAQ question: Which is better for my gate \u2014 swing or sliding?", name: "t016", widget: "string", required: false},
+              {label: "FAQ question: Do gate motors work during power failure?", name: "t017", widget: "string", required: false},
+              {label: "FAQ answer: If your driveway has depth for leaves to swing and slope is ", name: "t018", widget: "text", required: false},
+              {label: "FAQ answer: All operators include key-release manual override; battery b", name: "t019", widget: "text", required: false},
+              {label: "Application chip: Villas & farmhouses", name: "t020", widget: "string", required: false},
+              {label: "Application chip: Housing societies", name: "t021", widget: "string", required: false},
+              {label: "Application chip: Factories & logistics parks", name: "t022", widget: "string", required: false},
+              {label: "Application chip: Institutions", name: "t023", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t024", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t025", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t026", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t027", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t028", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t029", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for automatic gates", name: "t030", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t031", widget: "text", required: false},
+              {label: "Photo caption: Automatic Gates \u00b7 01", name: "t032", widget: "string", required: false},
+              {label: "Photo caption: Automatic Gates \u00b7 02", name: "t033", widget: "string", required: false},
+              {label: "Photo caption: Automatic Gates \u00b7 03", name: "t034", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Automatic Gates \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Automatic Gates \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Automatic Gates \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "catalogs"
+        label: "Catalogues page"
+        file: "content/catalogs.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Product catalogues", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Fourteen downloadable PDF catalogues with photos, models and", name: "t002", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t003", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t004", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t005", widget: "string", required: false},
+              {label: "Card title: Automatic Gates", name: "t006", widget: "string", required: false},
+              {label: "Card title: Automatic Doors", name: "t007", widget: "string", required: false},
+              {label: "Card title: Folding Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Boom Barriers & Road Blockers", name: "t009", widget: "string", required: false},
+              {label: "Card title: Dock Levelers & Scissor Lifts", name: "t010", widget: "string", required: false},
+              {label: "Card title: Pergolas & Retractable Roofs", name: "t011", widget: "string", required: false},
+              {label: "Card title: Cold Storage Doors", name: "t012", widget: "string", required: false},
+              {label: "Card title: Industrial Sliding Doors", name: "t013", widget: "string", required: false},
+              {label: "Card title: Fire-Rated & Clean-Room Doors", name: "t014", widget: "string", required: false},
+              {label: "Card title: Turnstiles & Access Control", name: "t015", widget: "string", required: false},
+              {label: "Card title: Motors, Operators & Spares", name: "t016", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t017", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t018", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t019", widget: "text", required: false},
+              {label: "Card text: Swing & sliding gate automation \u2014 21 swing motor models, tel", name: "t020", widget: "text", required: false},
+              {label: "Card text: Sensor sliding doors, telescopic and hermetic doors for reta", name: "t021", widget: "string", required: false},
+              {label: "Card text: India's only 100% Indian-make transparent polycarbonate fold", name: "t022", widget: "string", required: false},
+              {label: "Card text: 2nd-gen brushless boom barriers (1.5\u20138 s, IP44), road blocke", name: "t023", widget: "text", required: false},
+              {label: "Card text: Hydraulic dock levelers, dock shelters, scissor lifts and co", name: "t024", widget: "string", required: false},
+              {label: "Card text: Motorised louvered pergolas, retractable fabric roofs and zi", name: "t025", widget: "string", required: false},
+              {label: "Card text: Insulated hinged & sliding cold room doors, freezer doors wi", name: "t026", widget: "string", required: false},
+              {label: "Card text: Straight & telescopic industrial sliding doors, fire-station", name: "t027", widget: "string", required: false},
+              {label: "Card text: SS-304 fire-rated doors, clean-room flush doors and metal fi", name: "t028", widget: "string", required: false},
+              {label: "Card text: Tripod, flap and full-height turnstiles \u2014 SIE-M1000/M2000/A2", name: "t029", widget: "string", required: false},
+              {label: "Card text: SIE motor range, control boards, remotes, photocells and gen", name: "t030", widget: "string", required: false},
+              {label: "CTA heading: Get a same-day recommendation for your project", name: "t031", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t032", widget: "text", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "none", name: "none", widget: "hidden", required: false}          ]}
+      - name: "folding-doors"
+        label: "Folding Doors"
+        file: "content/folding-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Folding Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Transparent polycarbonate folding-sliding doors \u2014 a 100% Ind", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Folding Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Transparent PC Folding Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Aluminium Bi-Fold Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Industrial Folding Doors", name: "t010", widget: "string", required: false},
+              {label: "Card text: Crystal-clear, virtually unbreakable polycarbonate leaves th", name: "t011", widget: "text", required: false},
+              {label: "Card text: Thermally efficient aluminium-glass bi-folds for caf\u00e9s, banq", name: "t012", widget: "string", required: false},
+              {label: "Card text: Heavy-duty folding leaves for hangars and wide industrial op", name: "t013", widget: "string", required: false},
+              {label: "FAQ question: Why polycarbonate instead of glass?", name: "t014", widget: "string", required: false},
+              {label: "FAQ answer: Polycarbonate is around 200\u00d7 more impact-resistant than glas", name: "t015", widget: "text", required: false},
+              {label: "Application chip: Restaurants & caf\u00e9s", name: "t016", widget: "string", required: false},
+              {label: "Application chip: Showrooms", name: "t017", widget: "string", required: false},
+              {label: "Application chip: Banquet halls", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Hangars & industry", name: "t019", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t020", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t021", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t022", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t023", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t024", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t025", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for folding doors", name: "t026", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t027", widget: "text", required: false},
+              {label: "Photo caption: Folding Doors \u00b7 01", name: "t028", widget: "string", required: false},
+              {label: "Photo caption: Folding Doors \u00b7 02", name: "t029", widget: "string", required: false},
+              {label: "Photo caption: Folding Doors \u00b7 03", name: "t030", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Folding Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Folding Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Folding Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "industrial-sliding-doors"
+        label: "Industrial Sliding Doors"
+        file: "content/industrial-sliding-doors.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Hero title: Industrial Sliding Doors", name: "t001", widget: "string", required: false},
+              {label: "Hero subtitle: Heavy straight-sliding and telescopic industrial doors \u2014 man", name: "t002", widget: "text", required: false},
+              {label: "Section heading: What we build & automate", name: "t003", widget: "string", required: false},
+              {label: "Section heading: From our installations", name: "t004", widget: "string", required: false},
+              {label: "Section heading: Where this range fits", name: "t005", widget: "string", required: false},
+              {label: "Section heading: Industrial Sliding Doors \u2014 common questions", name: "t006", widget: "string", required: false},
+              {label: "Section heading: You may also need", name: "t007", widget: "string", required: false},
+              {label: "Card title: Straight Sliding Doors", name: "t008", widget: "string", required: false},
+              {label: "Card title: Telescopic Sliding Doors", name: "t009", widget: "string", required: false},
+              {label: "Card title: Hangar & Special Doors", name: "t010", widget: "string", required: false},
+              {label: "Card text: Top-hung or bottom-rolling insulated leaves for wide industr", name: "t011", widget: "string", required: false},
+              {label: "Card text: Multi-leaf telescoping for maximum clear width in minimum pa", name: "t012", widget: "string", required: false},
+              {label: "Card text: Engineered multi-leaf systems for aviation and heavy industr", name: "t013", widget: "string", required: false},
+              {label: "FAQ question: Can these doors be automated later?", name: "t014", widget: "string", required: false},
+              {label: "FAQ answer: Yes \u2014 we design tracks and leaves motor-ready so drives can ", name: "t015", widget: "string", required: false},
+              {label: "Application chip: Factories", name: "t016", widget: "string", required: false},
+              {label: "Application chip: Hangars", name: "t017", widget: "string", required: false},
+              {label: "Application chip: Power & utilities", name: "t018", widget: "string", required: false},
+              {label: "Application chip: Railways", name: "t019", widget: "string", required: false},
+              {label: "Card title: Rolling Shutters", name: "t020", widget: "string", required: false},
+              {label: "Card title: High-Speed Doors", name: "t021", widget: "string", required: false},
+              {label: "Card title: Garage & Sectional Doors", name: "t022", widget: "string", required: false},
+              {label: "Card text: GI, aluminium, polycarbonate & India's only 100% Indian-make", name: "t023", widget: "text", required: false},
+              {label: "Card text: Rapid roll PVC doors up to 100 RPM-class SIE40\u2013SIE100 motors", name: "t024", widget: "text", required: false},
+              {label: "Card text: Insulated overhead sectional doors, stacking doors and resid", name: "t025", widget: "text", required: false},
+              {label: "CTA heading: Get a same-day recommendation for industrial sliding doors", name: "t026", widget: "string", required: false},
+              {label: "CTA text: Share your opening size and a photo \u2014 our Mumbai engineering", name: "t027", widget: "text", required: false},
+              {label: "Photo caption: Industrial Sliding Doors \u00b7 01", name: "t028", widget: "string", required: false},
+              {label: "Photo caption: Industrial Sliding Doors \u00b7 02", name: "t029", widget: "string", required: false},
+              {label: "Photo caption: Industrial Sliding Doors \u00b7 03", name: "t030", widget: "string", required: false}          ]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Photo 1: Industrial Sliding Doors \u00b7 01", name: "img01", widget: "image", required: false},
+              {label: "Photo 2: Industrial Sliding Doors \u00b7 02", name: "img02", widget: "image", required: false},
+              {label: "Photo 3: Industrial Sliding Doors \u00b7 03", name: "img03", widget: "image", required: false}          ]}
+      - name: "global"
+        label: "Global (logo)"
+        file: "content/global.json"
+        fields:
+          - {label: "Texts", name: "texts", widget: "object", required: false, collapsed: true, fields: [
+              {label: "none", name: "none", widget: "hidden", required: false}]}
+          - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
+              {label: "Site logo (header)", name: "logo", widget: "image", required: false}          ]}
+
+  - name: "code"
+    label: "💻 Custom Code (advanced)"
+    files:
+      - name: "custom"
+        label: "Custom CSS & JavaScript (applies to every page)"
+        file: "content/custom.json"
+        fields:
+          - {label: "Custom CSS", name: "css", widget: "code", default_language: "css", output_code_only: true, required: false, allow_language_selection: false}
+          - {label: "Custom JavaScript", name: "js", widget: "code", default_language: "javascript", output_code_only: true, required: false, allow_language_selection: false}

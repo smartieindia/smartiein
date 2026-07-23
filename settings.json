@@ -3,5 +3,13 @@
   "announcement": "",
   "heroImages": {},
   "videos": [],
-  "clientLogos": []
+  "clientLogos": [],
+  "design": {
+    "heroHeightVh": 88,
+    "pageHeroHeightVh": 62,
+    "heroSlideSeconds": 7,
+    "reviewSpeedSeconds": 20,
+    "logoSpeedSeconds": 18,
+    "kenburns": true
+  }
 }

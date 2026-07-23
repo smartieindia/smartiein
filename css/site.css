@@ -58,7 +58,7 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:1.1rem}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;background:var(--graphite);color:#fff;overflow:hidden;isolation:isolate}
+.hero{position:relative;min-height:var(--heroH,88vh);display:flex;align-items:flex-end;background:var(--graphite);color:#fff;overflow:hidden;isolation:isolate}
 .hero-slides,.hero-slide{position:absolute;inset:0}
 .hero-slide{opacity:0;transition:opacity 1.4s ease;background-size:cover;background-position:center}
 .hero-slide.on{opacity:1;animation:kb 9s ease-in-out forwards}
@@ -241,7 +241,7 @@ form.quote .full{grid-column:1/-1}
 .dark-sec>.wrap{position:relative;z-index:2}
 @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(24vw,12vw) scale(1.15)}}
 /* cinematic page hero upgrade */
-.page-hero{min-height:62vh;display:flex;align-items:flex-end}
+.page-hero{min-height:var(--pageHeroH,62vh);display:flex;align-items:flex-end}
 .page-hero .bg{opacity:.5}
 .page-hero .slats{position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(180deg,transparent 0 72px,rgba(255,255,255,.05) 72px 74px)}
 .page-hero .beam{position:absolute;top:-40%;width:2px;height:180%;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--signal) 65%,transparent),transparent);
@@ -288,8 +288,8 @@ header.nav{box-shadow:0 1px 0 rgba(0,0,0,.02),0 10px 40px rgba(10,16,22,.05)}
 
 /* v9.4 review + client logo marquees */
 .marquee{overflow:hidden;position:relative}
-.marquee-track{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;gap:18px;width:max-content;padding:14px 0;animation:tick 20s linear infinite}
-.marquee-track.rev{animation:tickR 18s linear infinite}
+.marquee-track{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;gap:18px;width:max-content;padding:14px 0;animation:tick var(--revSpeed,20s) linear infinite}
+.marquee-track.rev{animation:tickR var(--logoSpeed,18s) linear infinite}
 @keyframes tickR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .marquee:hover .marquee-track{animation-play-state:paused}
 .rev-pill{display:inline-flex;align-items:center;gap:12px;background:var(--graphite-2);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:10px 20px;white-space:nowrap;font-size:.9rem;color:#E4EAF0}
@@ -308,3 +308,5 @@ header.nav{box-shadow:0 1px 0 rgba(0,0,0,.02),0 10px 40px rgba(10,16,22,.05)}
 
 .rev-pill{flex:0 0 auto}
 .logo-pill{flex:0 0 auto}
+
+body.no-kenburns .hero-slide.on,body.no-kenburns .page-hero .bg{animation:none !important}
