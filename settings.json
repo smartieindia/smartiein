@@ -2,7 +2,15 @@
   "theme": "red",
   "announcement": "",
   "heroImages": {},
-  "videos": [],
+  "videos": [
+    "https://www.youtube.com/watch?v=Z8_OCGmWgZg",
+    "https://www.youtube.com/watch?v=2v58yDILWtI",
+    "https://www.youtube.com/watch?v=VOEeZ-W53Ec",
+    "https://www.youtube.com/watch?v=ODto1ZYu_bw",
+    "https://www.youtube.com/watch?v=b6UO_VX2lOk",
+    "https://www.youtube.com/watch?v=TYqrM7Y-eR0",
+    "https://www.youtube.com/watch?v=_yBXr21DhJ0"
+  ],
   "clientLogos": [],
   "design": {
     "heroHeightVh": 88,
