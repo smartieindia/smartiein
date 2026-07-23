@@ -315,3 +315,21 @@ body.no-kenburns .hero-slide.on,body.no-kenburns .page-hero .bg{animation:none !
 .hero-slide.video{animation:none !important}
 .hero-slide.video iframe{position:absolute;top:50%;left:50%;border:0;pointer-events:none;
  width:max(100vw,178vh);height:max(100vh,56.4vw);transform:translate(-50%,-50%)}
+
+/* v11: WhatsApp-themed quote CTA + team cards */
+.cta-btn{background:#25D366 !important;color:#fff !important;box-shadow:0 4px 14px rgba(37,211,102,.35)}
+.cta-btn:hover{background:#1EBE5A !important}
+.brand-line{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);display:block;margin-bottom:6px}
+.welcome-strip{background:var(--graphite);color:#fff;text-align:center;padding:10px 16px;font-family:var(--disp);font-weight:800;font-size:.95rem;letter-spacing:.03em}
+.welcome-strip b{color:var(--signal)}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.team-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.team-photo{aspect-ratio:3/3.6;background:var(--graphite-2);position:relative;overflow:hidden}
+.team-photo img{width:100%;height:100%;object-fit:cover}
+.team-photo.placeholder{display:flex;align-items:center;justify-content:center;color:#5A6572;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:20px}
+.team-body{padding:24px 26px 28px}
+.team-body h3{font-size:1.25rem;margin-bottom:4px}
+.team-role{color:var(--signal);font-weight:700;font-size:.88rem;margin-bottom:2px}
+.team-sub{color:var(--muted);font-size:.84rem;margin-bottom:14px}
+.team-body p{color:var(--muted);font-size:.9rem;line-height:1.6}
+@media(max-width:740px){.team-grid{grid-template-columns:1fr}}
