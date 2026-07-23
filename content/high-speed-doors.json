@@ -1,23 +1,23 @@
 {
  "texts": {
   "t001": "High-Speed Doors",
-  "t002": "High-speed PVC roll-up doors with SIE40–SIE100 servo/gear motors, radar and loop activation, self-repairing curtains and interlocking for cleanrooms, cold storage and logistics docks.",
+  "t002": "High-speed PVC roll-up doors with SIE40\u2013SIE100 servo/gear motors, radar and loop activation, self-repairing curtains and interlocking for cleanrooms, cold storage and logistics docks.",
   "t003": "What we build & automate",
   "t004": "From our installations",
   "t005": "Where this range fits",
-  "t006": "High-Speed Doors — common questions",
+  "t006": "High-Speed Doors \u2014 common questions",
   "t007": "You may also need",
   "t008": "Rapid Roll PVC Doors",
   "t009": "Self-Repairing Doors",
   "t010": "Freezer High-Speed Doors",
-  "t011": "SIE Motor Range (SIE40–SIE100)",
+  "t011": "SIE Motor Range (SIE40\u2013SIE100)",
   "t012": "Fast-cycle PVC curtain doors that cut energy loss, dust and pest ingress at busy openings.",
-  "t013": "Zipper-edge curtains that re-insert automatically after accidental impact — near-zero downtime.",
-  "t014": "Insulated, heated-frame rapid doors for cold rooms and freezer corridors down to −25 °C.",
+  "t013": "Zipper-edge curtains that re-insert automatically after accidental impact \u2014 near-zero downtime.",
+  "t014": "Insulated, heated-frame rapid doors for cold rooms and freezer corridors down to \u221225 \u00b0C.",
   "t015": "In-house motor and controller range with encoder limits, frequency drive soft start and service counters.",
   "t016": "How fast do the doors operate?",
   "t017": "What happens in a power cut?",
-  "t018": "Opening speeds of 0.8–2.0 m/s depending on size and drive, with radar, loop, pull-cord or interlock activation.",
+  "t018": "Opening speeds of 0.8\u20132.0 m/s depending on size and drive, with radar, loop, pull-cord or interlock activation.",
   "t019": "All doors include manual operation; UPS backup and battery kits are available for critical hygiene openings.",
   "t020": "Cold storage & freezer rooms",
   "t021": "Pharma cleanrooms",
@@ -28,16 +28,16 @@
   "t026": "Automatic Gates",
   "t027": "GI, aluminium, polycarbonate & India's only 100% Indian-make full-length transparent shutter.",
   "t028": "Insulated overhead sectional doors, stacking doors and residential garage automation with SIE16/36 openers.",
-  "t029": "Swing & sliding gate automation — 21 swing motor models, telescopic and cantilever systems.",
+  "t029": "Swing & sliding gate automation \u2014 21 swing motor models, telescopic and cantilever systems.",
   "t030": "Get a same-day recommendation for high-speed doors",
-  "t031": "Share your opening size and a photo — our Mumbai engineering desk replies with the right system and budget.",
-  "t032": "High-Speed Doors · 01",
-  "t033": "High-Speed Doors · 02",
-  "t034": "High-Speed Doors · 03"
+  "t031": "Share your opening size and a photo \u2014 our Mumbai engineering desk replies with the right system and budget.",
+  "t032": "High-Speed Doors \u00b7 01",
+  "t033": "High-Speed Doors \u00b7 02",
+  "t034": "High-Speed Doors \u00b7 03"
  },
  "images": {
-  "img01": "/images/high-speed-doors-1.jpg",
-  "img02": "/images/high-speed-doors-2.jpg",
-  "img03": "/images/high-speed-doors-3.jpg"
+  "img01": "/images/high-speed-doors-1.jpg?v=2",
+  "img02": "/images/high-speed-doors-2.jpg?v=2",
+  "img03": "/images/high-speed-doors-3.jpg?v=2"
  }
 }

@@ -1,17 +1,280 @@
 {
-  "currency": "INR",
-  "products": [
-    {"id":"sie-boom-2g","name":"SIE Brushless Boom Barrier — 2nd Gen","category":"Barriers","price":null,"mrp":null,
-     "desc":"140 W brushless DC, 56.8 Nm, 1.5–8 s adjustable, IP44, straight/telescopic/folding boom. 2-year warranty.",
-     "image":"/images/barriers-1.jpg","pay":"","sku":"SIE-BB-2G"},
-    {"id":"sie16-opener","name":"SIE16 Garage Door Opener","category":"Garage & Sectional","price":null,"mrp":null,
-     "desc":"1600 N belt-drive ceiling opener, soft start-stop, auto-reverse, rolling-code remotes. For doors up to 16 m².",
-     "image":"/images/garage-sectional-doors-1.jpg","pay":"","sku":"SIE-16"},
-    {"id":"sie-tubular-motor","name":"SIE Tubular Shutter Motor","category":"Rolling Shutters","price":null,"mrp":null,
-     "desc":"Tubular motor with manual override for motorising rolling shutters. Includes wall switch; remote kit optional.",
-     "image":"/images/rolling-shutters-1.jpg","pay":"","sku":"SIE-TM"},
-    {"id":"sie-remote","name":"SIE Rolling-Code Remote (Pair)","category":"Motors & Spares","price":null,"mrp":null,
-     "desc":"433 MHz rolling-code remotes compatible with SIE gate, shutter and barrier receivers. Sold as a pair.",
-     "image":"/images/automation-motors-1.jpg","pay":"","sku":"SIE-RC2"}
-  ]
+ "currency": "INR",
+ "products": [
+  {
+   "id": "sie-boom-2g",
+   "name": "SIE Brushless Boom Barrier \u2014 2nd Gen",
+   "category": "Barriers",
+   "price": null,
+   "mrp": null,
+   "desc": "140 W brushless DC, 56.8 Nm, 1.5\u20138 s adjustable, IP44, straight/telescopic/folding boom. 2-year warranty.",
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "sku": "SIE-BB-2G"
+  },
+  {
+   "id": "sie16-opener",
+   "name": "SIE16 Garage Door Opener",
+   "category": "Garage & Sectional",
+   "price": null,
+   "mrp": null,
+   "desc": "1600 N belt-drive ceiling opener, soft start-stop, auto-reverse, rolling-code remotes. For doors up to 16 m\u00b2.",
+   "image": "/images/garage-sectional-doors-1.jpg",
+   "pay": "",
+   "sku": "SIE-16"
+  },
+  {
+   "id": "sie-tubular-motor",
+   "name": "SIE Tubular Shutter Motor",
+   "category": "Rolling Shutters",
+   "price": null,
+   "mrp": null,
+   "desc": "Tubular motor with manual override for motorising rolling shutters. Includes wall switch; remote kit optional.",
+   "image": "/images/rolling-shutters-1.jpg",
+   "pay": "",
+   "sku": "SIE-TM"
+  },
+  {
+   "id": "sie-remote",
+   "name": "SIE Rolling-Code Remote (Pair)",
+   "category": "Motors & Spares",
+   "price": null,
+   "mrp": null,
+   "desc": "433 MHz rolling-code remotes compatible with SIE gate, shutter and barrier receivers. Sold as a pair.",
+   "image": "/images/automation-motors-1.jpg",
+   "pay": "",
+   "sku": "SIE-RC2"
+  },
+  {
+   "id": "kit-badz130-24v",
+   "name": "SIE Boom Barrier \u2014 Telescopic 3m Kit (24V Brushless)",
+   "sku": "SIE-KIT-BADZ130-24V",
+   "category": "Barriers",
+   "price": 106350,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "1 barrier 24V Brushless DC motor 6s Speed + 1 control board with receiver + 1 fixing plate + 1 Telescopic boom 3mt"
+  },
+  {
+   "id": "kit-badz2228-24v",
+   "name": "SIE Boom Barrier \u2014 Springless Telescopic 6m Kit",
+   "sku": "SIE-KIT-BADZ2228-24V",
+   "category": "Barriers",
+   "price": 93750,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "Springless Barrier with 6m Telescopic Boom (100*45) + Controller + 2 remote"
+  },
+  {
+   "id": "kit-badz2228f-24v",
+   "name": "SIE Boom Barrier \u2014 Fence Boom 4m Kit",
+   "sku": "SIE-KIT-BADZ2228F-24V",
+   "category": "Barriers",
+   "price": 117450,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "Springless Barrier with 4m Fence Boom + Controller + 2 remote"
+  },
+  {
+   "id": "kit-banx-609-24v",
+   "name": "SIE Boom Barrier \u2014 6m Kit with Safety Sensor",
+   "sku": "SIE-KIT-BANX-609-24V",
+   "category": "Barriers",
+   "price": 88500,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "1 Barrier 24V Brushless DC motor with 6m Telescopic Boom (100*45) + Controller + 2 remote + VG01 Safety sensor."
+  },
+  {
+   "id": "bb-dzcb",
+   "name": "Boom Barrier Control Panel (24V Digital)",
+   "sku": "SIE-BB-DZCB",
+   "category": "Motors & Spares",
+   "price": 14850,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "24V Micro Processor Digital Control Panel Board"
+  },
+  {
+   "id": "bb-fnc-4m",
+   "name": "Boom Barrier Fence Boom \u2014 4m",
+   "sku": "SIE-BB-FNC-4m",
+   "category": "Motors & Spares",
+   "price": 30750,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "4mtr fence Boom Only"
+  },
+  {
+   "id": "bb-1chlp",
+   "name": "Boom Barrier Loop Detector \u2014 1 Channel",
+   "sku": "SIE-BB-1CHLP",
+   "category": "Motors & Spares",
+   "price": 6750,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "1 Channel Loop Detector"
+  },
+  {
+   "id": "bb-fxstd",
+   "name": "Boom Barrier Fixed Stand (for 6m Boom)",
+   "sku": "SIE-BB-FXSTD",
+   "category": "Motors & Spares",
+   "price": 3600,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "Fixed Boom Stand for 6m Boom Barrier"
+  },
+  {
+   "id": "p5111",
+   "name": "Boom Barrier Photocell \u2014 2-in-1 Wired/Wireless",
+   "sku": "SIE-P5111",
+   "category": "Motors & Spares",
+   "price": 4800,
+   "mrp": null,
+   "image": "/images/barriers-1.jpg",
+   "pay": "",
+   "desc": "2 in 1 Wired/Wireless Photocell with battery"
+  },
+  {
+   "id": "ba-sdo100",
+   "name": "Glass Swing Door Opener \u2014 up to 100kg",
+   "sku": "SIE-BA-SDO100",
+   "category": "Automatic Doors",
+   "price": 57150,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Single Swing Door Opener for up to 100kg + Microcontroller + Pull arm or Push arm + fixing accessories."
+  },
+  {
+   "id": "ba-sdo200",
+   "name": "Glass Swing Door Opener \u2014 up to 160kg",
+   "sku": "SIE-BA-SDO200",
+   "category": "Automatic Doors",
+   "price": 63450,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Single Swing Door Opener for up to 160kg + Microcontroller + Pull arm or Push arm + fixing accessories."
+  },
+  {
+   "id": "ba-sdo300",
+   "name": "Glass Swing Door Opener \u2014 up to 200kg",
+   "sku": "SIE-BA-SDO300",
+   "category": "Automatic Doors",
+   "price": 75750,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Single Swing Door Opener for up to 200kg + Microcontroller + Pull arm or Push arm + fixing accessories."
+  },
+  {
+   "id": "gldo-sbsn",
+   "name": "Glass Door Safety Photocell Sensor",
+   "sku": "SIE-GLDO-SBSN",
+   "category": "Motors & Spares",
+   "price": 7350,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Single beam Safety Photocell sensor."
+  },
+  {
+   "id": "gldo-rdrs-01",
+   "name": "Glass Door Automatic Open Radar Sensor",
+   "sku": "SIE-GLDO-RDRS-01",
+   "category": "Motors & Spares",
+   "price": 7350,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Automatic Open Radar Sensor."
+  },
+  {
+   "id": "gldodc24-moto",
+   "name": "Glass Door DC Brushless Motor",
+   "sku": "SIE-GLDODC24-MOTO",
+   "category": "Motors & Spares",
+   "price": 20250,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Dc brushless Motor for ZN150A."
+  },
+  {
+   "id": "gldo-cb",
+   "name": "Glass Door Microcontroller & Power Switch",
+   "sku": "SIE-GLDO-CB",
+   "category": "Motors & Spares",
+   "price": 17250,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Microcontroller and Power Cable Switch."
+  },
+  {
+   "id": "gldo-clmp-220",
+   "name": "Glass Door Holder Clamp \u2014 Short Pair",
+   "sku": "SIE-GLDO-CLMP/220",
+   "category": "Motors & Spares",
+   "price": 5140,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Short pair of Glass holder Clamps."
+  },
+  {
+   "id": "gldo-clmp-1200",
+   "name": "Glass Door Holder Clamp \u2014 1.2m Pair",
+   "sku": "SIE-GLDO-CLMP/1200",
+   "category": "Motors & Spares",
+   "price": 11100,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "1.2m Pair of Glass holder Clamps."
+  },
+  {
+   "id": "gldo-wts-switch",
+   "name": "Glass Door Wireless Touch Switch",
+   "sku": "SIE-GLDO-WTS/Switch",
+   "category": "Motors & Spares",
+   "price": 10960,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "Wireless touch Switch."
+  },
+  {
+   "id": "gldo-blt-6-2m",
+   "name": "Glass Door Opener Belt \u2014 6.2m",
+   "sku": "SIE-GLDO-BLT-6.2m",
+   "category": "Motors & Spares",
+   "price": 8400,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "6.2m rubber Belt for Door opener."
+  },
+  {
+   "id": "gldo-rnr",
+   "name": "Glass Door Runner Set (with Bearing Wheels)",
+   "sku": "SIE-GLDO-RNR",
+   "category": "Motors & Spares",
+   "price": 5780,
+   "mrp": null,
+   "image": "/images/automatic-doors-1.jpg",
+   "pay": "",
+   "desc": "1 Pair of Runner with bearing wheels."
+  }
+ ]
 }
