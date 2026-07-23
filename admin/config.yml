@@ -877,6 +877,84 @@ collections:
           - {label: "Photos", name: "images", widget: "object", required: false, collapsed: true, fields: [
               {label: "Site logo (header)", name: "logo", widget: "image", required: false}          ]}
 
+  - name: "catalogues"
+    label: "📖 Catalogue PDFs"
+    files:
+      - name: "combined"
+        label: "Full Combined Catalogue (all 14 categories)"
+        file: "catalogs/smartie-complete-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace the combined catalogue. Keep the filename as smartie-complete-catalogue.pdf"}
+      - name: "rolling_shutters"
+        label: "Rolling Shutters Catalogue"
+        file: "catalogs/rolling-shutters-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "high_speed_doors"
+        label: "High Speed Doors Catalogue"
+        file: "catalogs/high-speed-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "garage_sectional_doors"
+        label: "Garage Sectional Doors Catalogue"
+        file: "catalogs/garage-sectional-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "gates"
+        label: "Gates Catalogue"
+        file: "catalogs/gates-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "automatic_doors"
+        label: "Automatic Doors Catalogue"
+        file: "catalogs/automatic-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "folding_doors"
+        label: "Folding Doors Catalogue"
+        file: "catalogs/folding-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "barriers"
+        label: "Barriers Catalogue"
+        file: "catalogs/barriers-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "dock_levelers"
+        label: "Dock Levelers Catalogue"
+        file: "catalogs/dock-levelers-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "pergola_and_roofing"
+        label: "Pergola And Roofing Catalogue"
+        file: "catalogs/pergola-and-roofing-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "cold_storage_doors"
+        label: "Cold Storage Doors Catalogue"
+        file: "catalogs/cold-storage-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "industrial_sliding_doors"
+        label: "Industrial Sliding Doors Catalogue"
+        file: "catalogs/industrial-sliding-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "fire_rated_doors"
+        label: "Fire Rated Doors Catalogue"
+        file: "catalogs/fire-rated-doors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "turnstiles_access_control"
+        label: "Turnstiles Access Control Catalogue"
+        file: "catalogs/turnstiles-access-control-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
+      - name: "automation_motors"
+        label: "Automation Motors Catalogue"
+        file: "catalogs/automation-motors-catalogue.pdf"
+        fields:
+          - {label: "PDF File", name: "body", widget: "file", media_library: {config: {multiple: false}}, hint: "Upload a PDF to replace this catalogue"}
   - name: "code"
     label: "💻 Custom Code (advanced)"
     files:
